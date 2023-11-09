@@ -1,0 +1,2 @@
+# SnowScape
+Projekt predmeta RVIR 
