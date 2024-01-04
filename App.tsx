@@ -6,6 +6,8 @@
  */
 
 import React from 'react';
+import Weather from './Components/Weather/Weather.tsx';
+
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -90,9 +92,13 @@ function App(): React.JSX.Element {
             Read the docs to discover what to do next:
           </Section>
           <LearnMoreLinks />
+
         </View>
+        {/* <Weather /> */}
+
       </ScrollView>
     </SafeAreaView>
+
   );
 }
 
