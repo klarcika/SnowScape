@@ -94,7 +94,7 @@ function App(): React.JSX.Element {
           <LearnMoreLinks />
 
         </View>
-        {/* <Weather /> */}
+        {/*<Weather /> */}
 
       </ScrollView>
     </SafeAreaView>
