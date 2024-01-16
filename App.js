@@ -7,7 +7,7 @@ import CardPage from './src/CardPage';
 import HomePage from './src/HomePage';
 import TrailPage from './src/TrailPage';
 import UserPage from './src/UserPage';
-import WeatherPage from './src/WeatherPage';
+import WeatherPage from './src/Weather/WeatherPage';
 
 const Stack = createStackNavigator();
 
