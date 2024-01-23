@@ -1,22 +1,24 @@
+import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { initializeApp } from 'firebase/app';
+import { getReactNativePersistence, initializeAuth } from 'firebase/auth';
+
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'; // Ensure you have this import
 import Icon from 'react-native-vector-icons/FontAwesome';
 import CardPage from './src/CardPage';
 import HomePage from './src/HomePage';
+import LoginPage from './src/Login/LoginPage';
+import RegistrationPage from './src/Login/RegistrationPage';
+import AddEquipmentPage from './src/Profile/AddEquipmentPage';
+import CardDetailsScreen from './src/Profile/CardDetailsScreen';
+import CardsPage from './src/Profile/CardsPage';
+import EquipmentDetailsPage from './src/Profile/EquipmentDetailsPage';
+import EquipmentPage from './src/Profile/EquipmentPage';
 import TrailPage from './src/TrailPage';
 import UserPage from './src/UserPage';
 import WeatherPage from './src/Weather/WeatherPage';
-import * as firebase from 'firebase';
-import RegistrationPage from './src/Login/RegistrationPage';
-import LoginPage from './src/Login/LoginPage';
-import CardsPage from './src/Profile/CardsPage';
-import CardDetailsScreen from './src/Profile/CardDetailsScreen';
-import EquipmentPage from './src/Profile/EquipmentPage';
-import EquipmentDetailsPage from './src/Profile/EquipmentDetailsPage';
-import { getFirestore } from "firebase/firestore";
-import AddEquipmentPage from './src/Profile/AddEquipmentPage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCPwgOXynkwzZUZhtOAmPe6pbitsNGTW-I",
@@ -29,6 +31,9 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const auth = initializeAuth(app, {
+  persistence: getReactNativePersistence(ReactNativeAsyncStorage),
+});
 
 const Stack = createStackNavigator();
 
@@ -145,13 +150,6 @@ const CardsScreen = () => {
   );
 };
 
-const CardDetailsScreen = () => {
-  return (
-    <BaseScreen>
-      <CardDetailsScreen />
-    </BaseScreen>
-  );
-};
 
 const EquipmentScreen = () => {
   return (
