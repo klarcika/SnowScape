@@ -1,0 +1,69 @@
+uporabnik:
+	- id
+	- ime
+	- priimek
+	- email
+	- telefonska številka
+
+
+seznamOpreme:
+	- id
+	- oprema (polje):
+		- id
+		- tip_opreme
+		- leto_nakupa (kdaj je bila kupljena)
+		- velikost
+		- opis
+		- model
+		- stanje (rabljeno, novo)
+
+smucisce:
+	- id
+	- naziv
+	- naslov
+	- obratovalni_cas
+	- cenik (seznam ponudbe kart):
+		- id
+		- tip_karte (enkratna, naročnina za 1 mesec,..)
+		- cena
+
+karta:
+	- id
+	- id_uporabnika
+	- tip_karte (enkratna, naročnina,...)
+	- id_smucisca
+	- veljavnost_do (do kdaj je karta veljavna)
+	- datum_nakupa
+
+*vreme:
+	- id
+	- id_smucisca
+	- temperatura
+	- veter
+	- padavine
+	- vidljivost
+
+objava:
+	- id
+	- id_avtorja
+	- naslov
+	- vsebina
+	- datum_objave
+	- komentarji: (seznam komentarjev)
+		- id
+		- id_avtorja
+		- vsebina
+		- datum_komentarja
+
+tekmovanje:
+	- id
+	- id_avtorja (kdo je razpisal tekmovanje
+	- id_smucisca
+	- datum_tekmovanja
+	- ura_tekmovanja
+	- datum prijave (do kdaj se uporabniki lahko prijavijo na tekmovanje)
+	- prijavljeni (seznam prijavljenih uporabnikov):
+		- id
+		- id_uporabnika
+
+*če pridobivamo podatke z APIjem tega ne rabimo?
