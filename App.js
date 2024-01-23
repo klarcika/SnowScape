@@ -15,6 +15,8 @@ import CardsPage from './src/Profile/CardsPage';
 import CardDetailsScreen from './src/Profile/CardDetailsScreen';
 import EquipmentPage from './src/Profile/EquipmentPage';
 import EquipmentDetailsPage from './src/Profile/EquipmentDetailsPage';
+import { getFirestore } from "firebase/firestore";
+import AddEquipmentPage from './src/Profile/AddEquipmentPage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCPwgOXynkwzZUZhtOAmPe6pbitsNGTW-I",
@@ -29,6 +31,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const Stack = createStackNavigator();
+
+export const db = getFirestore(app);
 
 // Create a navigation service
 export const navigationRef = React.createRef();
@@ -165,6 +169,14 @@ const EquipmentDetailsScreen = () => {
   );
 };
 
+const AddEquipmentScreen = () => {
+  return (
+    <BaseScreen>
+      <AddEquipmentPage />
+    </BaseScreen>
+  );
+};
+
 const App = () => {
   return (
     <NavigationContainer ref={navigationRef}>
@@ -184,6 +196,7 @@ const App = () => {
         <Stack.Screen name="CardDetails" component={CardDetailsScreen} />
         <Stack.Screen name="Equipment" component={EquipmentScreen} />
         <Stack.Screen name="EquipmentDetails" component={EquipmentDetailsScreen} />
+        <Stack.Screen name="AddEquipment" component={AddEquipmentScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

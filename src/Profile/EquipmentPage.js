@@ -40,7 +40,7 @@ const EquipmentPage = () => {
           </View>
         </TouchableOpacity>
       ))}
-      <TouchableOpacity onPress={() => {/* Dodaj logiko za dodajanje nove opreme */}}>
+      <TouchableOpacity onPress={() => navigation.navigate('AddEquipment')}>
         <View>
           <Text>Dodaj novo opremo</Text>
         </View>
