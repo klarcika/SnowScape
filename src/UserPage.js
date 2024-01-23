@@ -5,7 +5,16 @@ const UserPage = () => {
   return (
     <View>
       <Text>User Page</Text>
-      {/* Add User Page content here */}
+      <TouchableOpacity onPress={() => navigation.navigate('Cards')}>
+        <View>
+          <Text>Moje karte</Text>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Equipment')}>
+        <View>
+          <Text>Moja oprema</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };

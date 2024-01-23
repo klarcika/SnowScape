@@ -11,7 +11,10 @@ import WeatherPage from './src/Weather/WeatherPage';
 import * as firebase from 'firebase';
 import RegistrationPage from './src/Login/RegistrationPage';
 import LoginPage from './src/Login/LoginPage';
-
+import CardsPage from './src/Profile/CardsPage';
+import CardDetailsScreen from './src/Profile/CardDetailsScreen';
+import EquipmentPage from './src/Profile/EquipmentPage';
+import EquipmentDetailsPage from './src/Profile/EquipmentDetailsPage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCPwgOXynkwzZUZhtOAmPe6pbitsNGTW-I",
@@ -130,6 +133,38 @@ const LoginScreen = () => {
   );
 };
 
+const CardsScreen = () => {
+  return (
+    <BaseScreen>
+      <CardsPage />
+    </BaseScreen>
+  );
+};
+
+const CardDetailsScreen = () => {
+  return (
+    <BaseScreen>
+      <CardDetailsScreen />
+    </BaseScreen>
+  );
+};
+
+const EquipmentScreen = () => {
+  return (
+    <BaseScreen>
+      <EquipmentPage />
+    </BaseScreen>
+  );
+};
+
+const EquipmentDetailsScreen = () => {
+  return (
+    <BaseScreen>
+      <EquipmentDetailsPage />
+    </BaseScreen>
+  );
+};
+
 const App = () => {
   return (
     <NavigationContainer ref={navigationRef}>
@@ -145,6 +180,10 @@ const App = () => {
         <Stack.Screen name="Weather" component={WeatherScreen} />
         <Stack.Screen name="Registration" component={RegistrationScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Cards" component={CardsScreen} />
+        <Stack.Screen name="CardDetails" component={CardDetailsScreen} />
+        <Stack.Screen name="Equipment" component={EquipmentScreen} />
+        <Stack.Screen name="EquipmentDetails" component={EquipmentDetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
