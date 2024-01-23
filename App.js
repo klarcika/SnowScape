@@ -9,6 +9,9 @@ import TrailPage from './src/TrailPage';
 import UserPage from './src/UserPage';
 import WeatherPage from './src/Weather/WeatherPage';
 import * as firebase from 'firebase';
+import RegistrationPage from './src/Login/RegistrationPage';
+import LoginPage from './src/Login/LoginPage';
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyCPwgOXynkwzZUZhtOAmPe6pbitsNGTW-I",
@@ -57,6 +60,13 @@ const BaseScreen = ({ navigation, children }) => {
         <TouchableOpacity onPress={() => navigation.navigate('Weather')}>
           <Icon name="cloud" size={30} color="white" style={styles.footerIcon} />
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Registration')}>
+         <Icon name="user-plus" size={30} color="white" style={styles.footerIcon} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+          <Icon name="sign-in" size={30} color="white" style={styles.footerIcon} />
+        </TouchableOpacity>
+
       </View>
     </View>
   );
@@ -104,6 +114,22 @@ const WeatherScreen = () => {
   );
 };
 
+const RegistrationScreen = () => {
+  return (
+    <BaseScreen>
+      <RegistrationPage />
+    </BaseScreen>
+  );
+};
+
+const LoginScreen = () => {
+  return (
+    <BaseScreen>
+      <LoginPage />
+    </BaseScreen>
+  );
+};
+
 const App = () => {
   return (
     <NavigationContainer ref={navigationRef}>
@@ -117,6 +143,8 @@ const App = () => {
         <Stack.Screen name="Trail" component={TrailScreen} />
         <Stack.Screen name="Card" component={CardScreen} />
         <Stack.Screen name="Weather" component={WeatherScreen} />
+        <Stack.Screen name="Registration" component={RegistrationScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
