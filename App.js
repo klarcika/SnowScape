@@ -12,11 +12,11 @@ import * as firebase from 'firebase';
 import RegistrationPage from './src/Login/RegistrationPage';
 import LoginPage from './src/Login/LoginPage';
 import CardsPage from './src/Profile/CardsPage';
-import CardDetailsScreen from './src/Profile/CardDetailsScreen';
 import EquipmentPage from './src/Profile/EquipmentPage';
 import EquipmentDetailsPage from './src/Profile/EquipmentDetailsPage';
 import { getFirestore } from "firebase/firestore";
 import AddEquipmentPage from './src/Profile/AddEquipmentPage';
+import CardDetailsPage from './src/Profile/CardDetailsPage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCPwgOXynkwzZUZhtOAmPe6pbitsNGTW-I",
@@ -148,7 +148,7 @@ const CardsScreen = () => {
 const CardDetailsScreen = () => {
   return (
     <BaseScreen>
-      <CardDetailsScreen />
+      <CardDetailsPage />
     </BaseScreen>
   );
 };
