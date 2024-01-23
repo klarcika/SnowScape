@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const CardDetailsScreen = ({ route }) => {
+const CardDetailsPage = ({ route }) => {
   const { card } = route.params;
 
   return (
@@ -15,4 +15,4 @@ const CardDetailsScreen = ({ route }) => {
   );
 };
 
-export default CardDetailsScreen;
+export default CardDetailsPage;

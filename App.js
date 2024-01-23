@@ -19,6 +19,18 @@ import EquipmentPage from './src/Profile/EquipmentPage';
 import TrailPage from './src/TrailPage';
 import UserPage from './src/UserPage';
 import WeatherPage from './src/Weather/WeatherPage';
+<<<<<<< HEAD
+=======
+import * as firebase from 'firebase';
+import RegistrationPage from './src/Login/RegistrationPage';
+import LoginPage from './src/Login/LoginPage';
+import CardsPage from './src/Profile/CardsPage';
+import EquipmentPage from './src/Profile/EquipmentPage';
+import EquipmentDetailsPage from './src/Profile/EquipmentDetailsPage';
+import { getFirestore } from "firebase/firestore";
+import AddEquipmentPage from './src/Profile/AddEquipmentPage';
+import CardDetailsPage from './src/Profile/CardDetailsPage';
+>>>>>>> 51571184c7862459a6b8770c3eaee148eef7c124
 
 const firebaseConfig = {
   apiKey: "AIzaSyCPwgOXynkwzZUZhtOAmPe6pbitsNGTW-I",
@@ -150,6 +162,16 @@ const CardsScreen = () => {
   );
 };
 
+<<<<<<< HEAD
+=======
+const CardDetailsScreen = () => {
+  return (
+    <BaseScreen>
+      <CardDetailsPage />
+    </BaseScreen>
+  );
+};
+>>>>>>> 51571184c7862459a6b8770c3eaee148eef7c124
 
 const EquipmentScreen = () => {
   return (
