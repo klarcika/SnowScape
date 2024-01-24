@@ -63,9 +63,6 @@ const BaseScreen = ({ navigation, children }) => {
         <TouchableOpacity onPress={() => navigation.navigate('Trail')}>
           <Icon name="globe" size={30} color="white" style={styles.footerIcon} />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('Card')}>
-          <Icon name="star" size={30} color="white" style={styles.footerIcon} />
-        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Weather')}>
           <Icon name="cloud" size={30} color="white" style={styles.footerIcon} />
         </TouchableOpacity>
