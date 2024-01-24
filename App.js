@@ -8,17 +8,17 @@ import HomePage from './src/HomePage';
 import TrailPage from './src/TrailPage';
 import UserPage from './src/UserPage';
 import WeatherPage from './src/Weather/WeatherPage';
-import * as firebase from 'firebase';
-import RegistrationPage from './src/Login/RegistrationPage';
-import LoginPage from './src/Login/LoginPage';
+//import * as firebase from 'firebase';
+//import RegistrationPage from './src/Login/RegistrationPage';
+//import LoginPage from './src/Login/LoginPage';
 import CardsPage from './src/Profile/CardsPage';
 import EquipmentPage from './src/Profile/EquipmentPage';
 import EquipmentDetailsPage from './src/Profile/EquipmentDetailsPage';
-import { getFirestore } from "firebase/firestore";
-import AddEquipmentPage from './src/Profile/AddEquipmentPage';
+//import { getFirestore } from "firebase/firestore";
+//import AddEquipmentPage from './src/Profile/AddEquipmentPage';
 import CardDetailsPage from './src/Profile/CardDetailsPage';
 
-const firebaseConfig = {
+/*const firebaseConfig = {
   apiKey: "AIzaSyCPwgOXynkwzZUZhtOAmPe6pbitsNGTW-I",
   authDomain: "snowscape-b7403.firebaseapp.com",
   projectId: "snowscape-b7403",
@@ -26,13 +26,13 @@ const firebaseConfig = {
   messagingSenderId: "860202849265",
   appId: "1:860202849265:web:fdb3334d1c459e52ceea50",
   measurementId: "G-YLHBG58DFZ"
-};
+};*/
 
-const app = initializeApp(firebaseConfig);
+//const app = initializeApp(firebaseConfig);
 
 const Stack = createStackNavigator();
 
-export const db = getFirestore(app);
+//export const db = getFirestore(app);
 
 // Create a navigation service
 export const navigationRef = React.createRef();
@@ -67,12 +67,7 @@ const BaseScreen = ({ navigation, children }) => {
         <TouchableOpacity onPress={() => navigation.navigate('Weather')}>
           <Icon name="cloud" size={30} color="white" style={styles.footerIcon} />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('Registration')}>
-         <Icon name="user-plus" size={30} color="white" style={styles.footerIcon} />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-          <Icon name="sign-in" size={30} color="white" style={styles.footerIcon} />
-        </TouchableOpacity>
+        
 
       </View>
     </View>
@@ -121,21 +116,7 @@ const WeatherScreen = () => {
   );
 };
 
-const RegistrationScreen = () => {
-  return (
-    <BaseScreen>
-      <RegistrationPage />
-    </BaseScreen>
-  );
-};
 
-const LoginScreen = () => {
-  return (
-    <BaseScreen>
-      <LoginPage />
-    </BaseScreen>
-  );
-};
 
 const CardsScreen = () => {
   return (
@@ -169,13 +150,7 @@ const EquipmentDetailsScreen = () => {
   );
 };
 
-const AddEquipmentScreen = () => {
-  return (
-    <BaseScreen>
-      <AddEquipmentPage />
-    </BaseScreen>
-  );
-};
+
 
 const App = () => {
   return (
@@ -190,13 +165,10 @@ const App = () => {
         <Stack.Screen name="Trail" component={TrailScreen} />
         <Stack.Screen name="Card" component={CardScreen} />
         <Stack.Screen name="Weather" component={WeatherScreen} />
-        <Stack.Screen name="Registration" component={RegistrationScreen} />
-        <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Cards" component={CardsScreen} />
         <Stack.Screen name="CardDetails" component={CardDetailsScreen} />
         <Stack.Screen name="Equipment" component={EquipmentScreen} />
         <Stack.Screen name="EquipmentDetails" component={EquipmentDetailsScreen} />
-        <Stack.Screen name="AddEquipment" component={AddEquipmentScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

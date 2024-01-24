@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import { View, Text, TextInput, Button, Alert } from 'react-native';
 import firebase from 'firebase';
 
@@ -41,3 +41,4 @@ const RegistrationPage = ({ navigation }) => {
 };
 
 export default RegistrationPage;
+*/
