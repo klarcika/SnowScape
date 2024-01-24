@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+/*import { initializeApp } from 'firebase/app';
 import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
 import { Alert, Button, Text, TextInput, View } from 'react-native';
 
@@ -48,4 +48,4 @@ const RegistrationPage = ({ navigation }) => {
   );
 };
 
-export default RegistrationPage;
+export default RegistrationPage;*/

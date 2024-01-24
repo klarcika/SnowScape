@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+/*import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { Alert, Button, Text, TextInput, View } from 'react-native';
 
