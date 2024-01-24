@@ -1,13 +1,21 @@
-/*import React, { useState } from 'react';
-import { View, Text, TextInput, Button, Alert } from 'react-native';
-import firebase from 'firebase';
+import { initializeApp } from 'firebase/app';
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { Alert, Button, Text, TextInput, View } from 'react-native';
+
+// Initialize Firebase
+const firebaseConfig = {
+  // Your Firebase configuration
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
 const RegistrationPage = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleRegistration = () => {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
+    createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // User registered successfully
         const user = userCredential.user;
@@ -41,4 +49,3 @@ const RegistrationPage = ({ navigation }) => {
 };
 
 export default RegistrationPage;
-*/
