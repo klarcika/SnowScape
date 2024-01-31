@@ -1,21 +1,13 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import firebase from 'firebase';
+import React, { useState } from 'react';
 import { Alert, Button, Text, TextInput, View } from 'react-native';
-
-// Initialize Firebase
-const firebaseConfig = {
-  // Your Firebase configuration
-};
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
 
 const LoginPage = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    signInWithEmailAndPassword(auth, email, password)
+    firebase.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
         // User logged in successfully
         const user = userCredential.user;

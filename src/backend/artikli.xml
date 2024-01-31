@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artikli>
+    <artikel>
+        <id>1</id>
+        <naziv>Plastične plastenke</naziv>
+        <cena>0.50</cena>
+        <zaloga>500</zaloga>
+        <dobavitelj_id>101</dobavitelj_id>
+        <datum_nabave>2023-04-10</datum_nabave>
+    </artikel>
+    <artikel>
+        <id>2</id>
+        <naziv>Reciklirani papir</naziv>
+        <cena>0.20</cena>
+        <zaloga>100</zaloga>
+        <dobavitelj_id>102</dobavitelj_id>
+        <datum_nabave>2023-04-15</datum_nabave>
+    </artikel>
+    <artikel>
+        <id>3</id>
+        <naziv>Steklo</naziv>
+        <cena>0.45</cena>
+        <zaloga>468</zaloga>
+        <dobavitelj_id>103</dobavitelj_id>
+        <datum_nabave>2023-04-20</datum_nabave>
+    </artikel>
+</artikli>

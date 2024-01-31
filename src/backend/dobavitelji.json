@@ -1,0 +1,66 @@
+{
+  "dobavitelji": {
+    "dobavitelj": [
+      {
+        "id": [
+          "101"
+        ],
+        "naziv": [
+          "EcoPack Ltd."
+        ],
+        "naslov": [
+          "Ljubljana, Slovenska cesta 12"
+        ],
+        "davcna_stevilka": [
+          "SI12345678"
+        ],
+        "kontakt": [
+          "info@ecopack.com"
+        ],
+        "opis": [
+          "Specializirani smo za trajnostne izdelke za ločevanje odpadkov."
+        ]
+      },
+      {
+        "id": [
+          "103"
+        ],
+        "naziv": [
+          "PaperTech Inc."
+        ],
+        "naslov": [
+          "New York, 5th Avenue 123"
+        ],
+        "davcna_stevilka": [
+          "US987654321"
+        ],
+        "kontakt": [
+          "info@papertech.com"
+        ],
+        "opis": [
+          "Ponujamo visokokakovosten reciklirani papir za okolju prijazno ločevanje odpadkov."
+        ]
+      },
+      {
+        "id": [
+          "103"
+        ],
+        "naziv": [
+          "GreenRecycle Ltd."
+        ],
+        "naslov": [
+          "London, Green Street 42"
+        ],
+        "davcna_stevilka": [
+          "UK87654321"
+        ],
+        "kontakt": [
+          "info@greenrecycle.com"
+        ],
+        "opis": [
+          "Specializirani smo za ponovno uporabo in recikliranje materialov za trajnostno ločevanje odpadkov."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "locevanje-odpadkov",
+  "private_key_id": "40784f6bcc8fb9119d2bede471514a1f562315c6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvDwKXzgr66Pxc\nlCxxAo8u6eyXKVdWhRTv001b76y2MR4LLyD5EN7heCnPttgtpZuFldlmHpi6mq0b\nb0SPCV9XUVyg99af3uFBHYrKYFdgaQq7sk4Obx8G6cg+MuWBZ+PvRGB0Tbbdbf/c\n7fQgED+ivurUDD8RQD56Vpyoa3OUTEPvOYIBYdi/uA3jQCGtPScfcTNC0DxbPJNN\nAzeyfQFyCuam3j8Y7j8iOJPvIm0P/gLyP59/HPUmNE3oKfw5JCacxZUyy7+xv8AQ\nPyTGmXbJpDy/pV3BVzoZ2MDxMLO4KZIhWPwAndT2uAeN36WXy2E+DCR+gAdXE7yR\nIXTveUdDAgMBAAECggEATfgkAgQBzPZXbE6MqrrmlhEXUM5XeZAlnpmg43lRFgaz\naGzRxU0X0BmKmdrI1y/jIHD5Fqw6/yXkQwtgYEre3Y+9723jeGo3Lp7fUbruP+EZ\nKDdG39PrYFNg3h8iLGxez5NHWJXChEY5hyeuq1dBWJWrFs3rix3vleKcvMC7Bkni\noRUk4ZMHcuPD+FWEGfksKQtBs0P02nyiaw0e0LCNu8RPAeMRdes6Ci0B7do+8E49\nI5B1KIlDGTudgnFVyc1/hV2SVQxTuA+YGjm5g23e+Y8NEuqQj9uJg7kcboFl7EcO\nZve4qQRMoYwxw2tOem3tG1Vzyq/3QhgwS5SHwx53aQKBgQDh3R+4Wpc8Q3jJ0HRN\n2XMIjQIoFF/cYvHGauI7cTvNPTB5Rjr0cwPZg3GjgPZEdIEYrFlaMi1PuOWdpXjF\nsWLTPEJJqpVyo87Vuu0c+BwwvsasYIDQcmBuXuGPZ0Y9n9UERa9H2USEnoGd+Zwu\nEF1tOC8IWSo3R/s5roVxJfEOmQKBgQDGaoZPuag36tNGOuO/uvVebk4qiPJkqHlY\nUx/wQSMwNpJj4ubxRTRBlqEM+FaA25sbd54Kh+z6lh9Tr3MNOJi2SzRlWckGf6G+\noNEFonWNXgnGFMPmOyES9dJjP2V00CNP1H8a+W61J+crlMEKZxyjp3kcMn4ksQ1y\n0w+u12Z6OwKBgQDcLWIxpeYOMjv6iIIILfUsncE/bvUv8yh740/c4HqKjZ7Gakco\na0KSdMd/u0TW4LfEZKbJ/WYcdEMqVdeQ6GZNQ03fYDJFyhfkVE+3UMqyXhdwjLal\n/QmyLj42PFfF1RykCIZhRRS9L4Nti5nLcdqRkRaQTdOQhlQKG+4rqe/+6QKBgA4Q\nHMbnzMFx1lmi8ON099Eilk2zeSKjQj59XcUkiL7xDz0fJukw03xWlcGalF77samn\nt77dVXGJVF0VEV19hm1dNTB9xZ69SxR8x3PTyOslICI29I+L31M9sxSvuJwn6GjP\nEdcymKMkWeEf4PLAzinXQ+E4vvIQzng192WYBL5jAoGBAIrBhZUYQRC+L0metjtz\nBMfdpjksMMKMV5eFm/uQ4N0yjP1ZPFTGPSHPxvPAH/JkQhihneEYsJaxzS4IABz6\n9Jqv409ybI+QqZ48dq8LhXm9IWwLIDNiDLvO8/dVVxy/Md9VZ8ydaTTZHdTI42x9\npYpbXAyevmzqg1z4A7BG6jDn\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-d1tmz@locevanje-odpadkov.iam.gserviceaccount.com",
+  "client_id": "106972257450177865565",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-d1tmz%40locevanje-odpadkov.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

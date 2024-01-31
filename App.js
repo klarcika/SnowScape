@@ -1,8 +1,4 @@
 import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { initializeApp } from 'firebase/app';
-import { getReactNativePersistence, initializeAuth } from 'firebase/auth';
 
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'; // Ensure you have this import
@@ -12,25 +8,13 @@ import HomePage from './src/HomePage';
 import LoginPage from './src/Login/LoginPage';
 import RegistrationPage from './src/Login/RegistrationPage';
 import AddEquipmentPage from './src/Profile/AddEquipmentPage';
-import CardDetailsScreen from './src/Profile/CardDetailsScreen';
+import CardDetailsScreen from './src/Profile/CardDetailsPage';
 import CardsPage from './src/Profile/CardsPage';
 import EquipmentDetailsPage from './src/Profile/EquipmentDetailsPage';
 import EquipmentPage from './src/Profile/EquipmentPage';
 import TrailPage from './src/TrailPage';
 import UserPage from './src/UserPage';
 import WeatherPage from './src/Weather/WeatherPage';
-<<<<<<< HEAD
-=======
-import * as firebase from 'firebase';
-import RegistrationPage from './src/Login/RegistrationPage';
-import LoginPage from './src/Login/LoginPage';
-import CardsPage from './src/Profile/CardsPage';
-import EquipmentPage from './src/Profile/EquipmentPage';
-import EquipmentDetailsPage from './src/Profile/EquipmentDetailsPage';
-import { getFirestore } from "firebase/firestore";
-import AddEquipmentPage from './src/Profile/AddEquipmentPage';
-import CardDetailsPage from './src/Profile/CardDetailsPage';
->>>>>>> 51571184c7862459a6b8770c3eaee148eef7c124
 
 const firebaseConfig = {
   apiKey: "AIzaSyCPwgOXynkwzZUZhtOAmPe6pbitsNGTW-I",
@@ -162,16 +146,6 @@ const CardsScreen = () => {
   );
 };
 
-<<<<<<< HEAD
-=======
-const CardDetailsScreen = () => {
-  return (
-    <BaseScreen>
-      <CardDetailsPage />
-    </BaseScreen>
-  );
-};
->>>>>>> 51571184c7862459a6b8770c3eaee148eef7c124
 
 const EquipmentScreen = () => {
   return (
