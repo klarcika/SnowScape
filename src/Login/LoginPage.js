@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import firebase from 'firebase';
 import React, { useState } from 'react';
+=======
+/*import { initializeApp } from 'firebase/app';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+>>>>>>> 0db9d9c7e1549bd159f3f25e395db7082497e126
 import { Alert, Button, Text, TextInput, View } from 'react-native';
 
 const LoginPage = ({ navigation }) => {
@@ -40,4 +45,5 @@ const LoginPage = ({ navigation }) => {
   );
 };
 
-export default LoginPage;
+//export default LoginPage;
+*/
